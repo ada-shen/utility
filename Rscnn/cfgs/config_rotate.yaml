@@ -1,0 +1,54 @@
+common:
+    workers: 0
+    seed: 0
+    
+    layer: 'fc1'
+    num_points: 1024
+    # num_classes: 40
+    batch_size: 1
+    
+    base_lr: 0.0001
+    lr_clip: 0.00001
+    lr_decay: 0.7
+    decay_step: 500
+    epochs: 1000
+
+    weight_decay: 0
+    bn_momentum: 0.9
+    bnm_clip: 0.01
+    bn_decay: 0.5
+    
+    evaluate: 1
+    val_freq_epoch: 1   # frequency in epoch for validation, can be decimal
+    print_freq_iter: 1   # frequency in iteration for printing infomation
+    
+    input_channels: 0    # feature channels except (x, y, z)
+    relation_prior: 1
+
+    
+    # h_ij: 0  for 3D Euclidean distance (3D Ed),    channels = 1
+    #       1  for (3D Ed, x_i, x_j, x_j - x_i),     channels = 10
+    #       2  for (2D Ed, x'_i, x'_j, x'_j - x'_i), channels = 10,  x' indicates 2D coordinates
+
+    # checkpoint: '../cls/rs_density_modelnet/cls_ssn_iter_28244_acc_0.920178.pth'
+    # checkpoint: '/home/ubuntu/project/skyler/Relation-Shape-CNN-master/cls/rs_ori_modelnetrr/cls_ssn_iter_52497_acc_0.860211.pth'
+    # checkpoint: '/home/ubuntu/project/skyler/Relation-Shape-CNN-master/cls/rs_weight_modelnetrr/cls_ssn_iter_53725_acc_0.840357.pth'
+    # # checkpoint: '/home/wzh/project/hsk/Relation-Shape-CNN-master/cls/rs_sift_modelnetrr/cls_ssn_iter_55260_acc_0.866694.pth'
+    # # checkpoint: '/home/wzh/project/hsk/Relation-Shape-CNN-master/cls/rs_ori_shaperr/cls_ssn_iter_67083_acc_0.972164.pth'
+    # # checkpoint: '/home/wzh/project/hsk/Relation-Shape-CNN-master/cls/rs_weight_shaperr/cls_ssn_iter_67841_acc_0.963466.pth'
+    # # checkpoint: '/home/wzh/project/hsk/Relation-Shape-CNN-master/cls/rs_sift_shaperr/cls_ssn_iter_71252_acc_0.974252.pth'
+    # # checkpoint: '/home/wzh/project/hsk/Relation-Shape-CNN-master/cls/rs_ori_ministrr/cls_ssn_iter_29796_acc_0.899000.pth'
+    # # checkpoint: '/home/wzh/project/hsk/Relation-Shape-CNN-master/cls/rs_weight_ministrr/cls_ssn_iter_31044_acc_0.861000.pth'
+    # # checkpoint: '/home/wzh/project/hsk/Relation-Shape-CNN-master/cls/rs_sift_ministrr/cls_ssn_iter_24804_acc_0.898000.pth'
+    # # checkpoint: '/home/ubuntu/project/skyler/Relation-Shape-CNN-master/cls/rs_density_modelnet/cls_ssn_iter_28244_acc_0.920178.pth'
+    # # checkpoint: '/home/ubuntu/project/skyler/Relation-Shape-CNN-master/cls/rs_weight_modelnet/cls_ssn_iter_66420_acc_0.914911.pth'
+    ##checkpoint: '/nfs-data/user4/Relation-Shape-CNN-master/cls/modelnet_original/cls_ssn_iter_43665_acc_0.924635.pth' 
+    # # the model to start from
+    # #######
+    #data_root: /nfs-data/user4/dataset/modelnet400
+    # # data_root: /home/wzh/project/hsk/Relation-Shape-CNN-master/data/3d-minist0
+    # # data_root: /home/wzh/project/hsk/pointnet-master/data/shapenet_0
+    # ####### evaluate data
+    # data_root: /home/ubuntu/project/skyler/dataset/Modelnet_Entropy0
+    # data_root: /home/ubuntu/project/skyler/dataset/Minist_Entropy0
+    # data_root: /home/ubuntu/project/skyler/dataset/shapenet_sid0

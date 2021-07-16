@@ -1,0 +1,3 @@
+/home/user21/zp/utility/pytorch/Relation-Shape-CNN-master/build/CMakeFiles/rebuild_cache.dir
+/home/user21/zp/utility/pytorch/Relation-Shape-CNN-master/build/CMakeFiles/pointnet2_ext.dir
+/home/user21/zp/utility/pytorch/Relation-Shape-CNN-master/build/CMakeFiles/edit_cache.dir

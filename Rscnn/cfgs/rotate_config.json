@@ -1,0 +1,60 @@
+{
+    "dataset":{
+        "modelnet": {
+            "num_classes": 40,
+            "path": "/nfs-data/user4/dataset/Modelnet_Entropy0"
+        },
+        "shapenet": {
+            "num_classes": 16,
+            "path": "/nfs-data/user4/dataset/shapenet_sid0"
+        },
+        "mnist": {
+            "num_classes": 10,
+            "path": "/nfs-data/user4/dataset/Minist_Entropy0"
+        }
+    },
+    "model" :{
+        "ori":{
+            "modelnet":{
+                "sigmaf": 6.6438,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_ori_modelnetrr/cls_ssn_iter_52497_acc_0.860211.pth"
+            },
+            "shapenet":{
+                "sigmaf": 4.0770,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_ori_shaperr/cls_ssn_iter_67083_acc_0.972164.pth"
+            },
+            "mnist":{
+                "sigmaf": 7.6568,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_ori_ministrr/cls_ssn_iter_29796_acc_0.899000.pth"
+            }
+        },
+        "weight":{
+            "modelnet":{
+                "sigmaf": 12.0633,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_weight_modelnetrr/cls_ssn_iter_53725_acc_0.840357.pth"
+            },
+            "shapenet":{
+                "sigmaf": 5.9234,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_weight_shaperr/cls_ssn_iter_67841_acc_0.963466.pth"
+            },
+            "mnist":{
+                "sigmaf": 5.4665,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_weight_ministrr/cls_ssn_iter_31044_acc_0.861000.pth"
+            }
+        },
+        "sift":{
+            "modelnet":{
+                "sigmaf": 131.168365,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_sift_modelnetrr/cls_ssn_iter_55260_acc_0.866694.pth"
+            },
+            "shapenet":{
+                "sigmaf": 48.928490,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_sift_shaperr/cls_ssn_iter_71252_acc_0.974252.pth"
+            },
+            "mnist":{
+                "sigmaf": 370.758545,
+                "checkpoint": "/nfs-data/user4/Relation-Shape-CNN-master/cls/rs_sift_ministrr/cls_ssn_iter_24804_acc_0.898000.pth"
+            }
+        }
+    }
+}

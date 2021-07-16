@@ -1,0 +1,60 @@
+{
+    "dataset":{
+        "modelnet": {
+            "num_classes": 40,
+            "path": "/dataset/Modelnet_Entropy0"
+        },
+        "shapenet": {
+            "num_classes": 16,
+            "path": "/dataset/shapenet_sid0"
+        },
+        "mnist": {
+            "num_classes": 10,
+            "path": "/dataset/Minist_Entropy0"
+        },
+        "fivesmall": {
+            "num_classes": 40,
+            "path": "/dataset/ModelnetFivesmall_Entropy0"
+        }
+    },
+    "model" :{
+        "ori":{
+            "modelnet":{
+                "sigmaf": 34.7728888701467,
+                "checkpoint": "/pointsift/pointsift_nores_modelnetrr/model.ckpt"
+            },
+            "shapenet":{
+                "sigmaf": 152.8170367928933,
+                "checkpoint": "/pointsift/pointsift_nores_shapenetrr/model.ckpt"
+            },
+            "mnist":{
+                "sigmaf": 349.5376209564209,
+                "checkpoint": "/pointsift/pointsift_nores_mnistrr/model.ckpt"
+            }
+        },
+        "nosift":{
+            "modelnet":{
+                "sigmaf": 39.88107519397489,
+                "checkpoint": "/pointsift/pointsift_nosift_modelnetrr/model.ckpt"
+            },
+            "shapenet":{
+                "sigmaf": 32.5381808701463,
+                "checkpoint": "/pointsift/pointsift_nosift_shapenetrr/model.ckpt"
+            },
+            "mnist":{
+                "sigmaf": 67.10507609863281,
+                "checkpoint": "/pointsift/pointsift_nosift_mnistrr/model.ckpt"
+            }
+        },
+        "sid":{
+            "modelnet": {
+                "sigmaf": 9.800660893708082,
+                "checkpoint": "/pointsift/pointsift_ori_modelnet/model.ckpt"
+            },
+            "fivesmall": {
+                "sigmaf": 6.32629485976560,
+                "checkpoint": "/pointsift/pointsift_ori_fivesmall/model.ckpt"
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "dataset":{
+        "modelnet": {
+            "num_classes": 40,
+            "path": "/dataset/Modelnet_Entropy0"
+        },
+        "shapenet": {
+            "num_classes": 16,
+            "path": "/dataset/shapenet_sid0"
+        },
+        "mnist": {
+            "num_classes": 10,
+            "path": "/dataset/Minist_Entropy0"
+        }
+    },
+    "model" :{
+        "ori":{
+            "modelnet":{
+                "sigmaf": 4.25556905416699,
+                "checkpoint": "/pointnet2/plus_ori_modelnetrr/model.ckpt"
+            },
+            "shapenet":{
+                "sigmaf": 4.021404,
+                "checkpoint": "/pointnet2/plus_ori_shapenetrr/model.ckpt"
+            },
+            "mnist":{
+                "sigmaf": 6.56703297668,
+                "checkpoint": "/pointnet2/plus_ori_mnistrr/model.ckpt"
+            }
+        },
+        "weight":{
+            "modelnet":{
+                "sigmaf": 7.07973374948873,
+                "checkpoint": "/pointnet2/plus_weight_modelnetrr/model.ckpt"
+            },
+            "shapenet":{
+                "sigmaf": 1.42065084766409,
+                "checkpoint": "/pointnet2/plus_weight_shapenetrr/model.ckpt"
+            },
+            "mnist":{
+                "sigmaf": 3.69179665196327,
+                "checkpoint": "/pointnet2/plus_weight_mnistrr/model.ckpt"
+            }
+        },
+        "sift":{
+            "modelnet":{
+                "sigmaf": 29.02262477134038,
+                "checkpoint": "/pointnet2/plus_oe_modelnetrr/model.ckpt"
+            },
+            "shapenet":{
+                "sigmaf": -1,
+                "checkpoint": "/pointnet2/plus_oe_shapenetrr/model.ckpt"
+            },
+            "mnist":{
+                "sigmaf": -1,
+                "checkpoint": "/pointnet2/plus_oe_mnistrr/model.ckpt"
+            }
+        },
+        "pointnet":{
+            "modelnet":{
+                "sigmaf": 1.36162566,
+                "checkpoint": "/pointnet/pointnet_ori_modelnetrr/model.ckpt"
+            }
+        }
+    }
+}
