@@ -82,7 +82,7 @@ python train.py
 ```
 
 (3)
-By [Baidu Cloud](https://pan.baidu.com/s/1MNtCbaOtptsRcG8LfPllgA) (access code: chv1) we also supply our trained models.
+We also supply our trained models to [Baidu Cloud](https://pan.baidu.com/s/1MNtCbaOtptsRcG8LfPllgA) (access code: chv1).
 
 #### Calculate sigma
 
