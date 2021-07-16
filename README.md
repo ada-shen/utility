@@ -120,3 +120,15 @@ python train_rotate.py
 python train_ad.py
 ```
 
+## Citation
+
+If you use this project in your research, please cite it.
+
+```
+@inproceedings{shen2021utility,
+ title={Verifiability and Predictability: Interpreting Utilities of Network Architectures for Point Cloud Processing},
+ author={Shen, Wen and Wei, Zhihua and Huang, Shikun and Zhang, Binbin and Chen, Panyue and Zhao, Ping and Zhang, Quanshi},
+ booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+ year={2021}
+}
+```
